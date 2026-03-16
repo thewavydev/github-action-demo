@@ -6,7 +6,7 @@ on:
 env:
   cloud: aws cloud
 
-job:
+jobs:
   greeting_job:
     runs-on: ubuntu-latest
     env:
