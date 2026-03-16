@@ -8,11 +8,11 @@ env:
 
 jobs:
   greeting_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     env:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona, it's Monday"
-      run: echo "$Greeting $first_name is using $cloud!"
-      env:
-        first_name: lehlohonolo
+        run: echo "$Greeting $first_name is using $cloud!"
+        env:
+          first_name: lehlohonolo
