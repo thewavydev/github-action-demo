@@ -1,6 +1,7 @@
-name: Testing Configuration Variables
+name: Testing configuration variables
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch
 
 env:
   cloud: aws cloud
@@ -12,6 +13,6 @@ job:
       Greeting: Hello
     steps:
       - name: "Say Hello to Mona"
-        run: echp "$Greeting $first_name is using $cloud with project ${{vars.PROJECT_ID}}"
+        run: echo "$Greeting $first_name is using $cloud with project ${{ vars.PROJECT_ID }}"
         env:
           first_name: Lehlohonolo
